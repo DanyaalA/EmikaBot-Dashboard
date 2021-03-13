@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const SidebarStyle = styled.aside`
-  width: 240px;
+  width: 192px;
   height: 100%;
   background-color: #071013;
   font-family: Mina;
@@ -17,15 +17,15 @@ export const BasePageStyle = styled.div`
   background-color: #AAAAAA;
   color: #FFF;
   position: absolute;
-  margin-left: 240px;
-  width: calc(100% - 240px);
+  margin-left: 192px;
+  width: calc(100% - 192px);
 `;
 
 export const DashboardGroup = styled.div`
     padding: 20px;
     border: 2px solid black;
-    width: 500px;
-    height: 280px;
+    width: 400px;
+    height: 224px;
     margin-left: 50px;
     margin-top: 25px;
 `;
@@ -34,7 +34,7 @@ export const DashboardGroup = styled.div`
 
 export const BaseHeader = styled.header`
   box-sizing: border-box;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
 `;
@@ -48,7 +48,7 @@ export const SidebarHeader = styled(BaseHeader)`
     color: #F5EFEF;
     padding-left: 10px;
     padding-top: 5px;
-    font-size: 24px;
+    font-size: 19px;
     cursor: pointer;
   };
 `;
@@ -60,9 +60,9 @@ export const SidebarContent = styled.div`
 `;
 
 export const SidebarItem = styled.div<any>`
-  font-size: 22px;
+  font-size: 17px;
   padding: 0px 0px 0px 0px;
-  height: 65px;
+  height: 52px;
   width: 100%;
   cursor: pointer;
   span {
@@ -72,8 +72,8 @@ export const SidebarItem = styled.div<any>`
       vertical-align: middle;
   };
   img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     vertical-align: middle;
     padding-left: 5px;
     padding-top: 5px
@@ -90,8 +90,8 @@ export const SidebarItem = styled.div<any>`
 
 
 export const IconStyle = styled.div`
-    height: 68px;
-    width: 68px;
+    height: 54px;
+    width: 54px;
     background-color: #292929;
     font-family: "Mina";
     border-radius: 50px;
@@ -112,17 +112,17 @@ export const IconStyle = styled.div`
 
 
 export const InputContainer = styled.div`
-  height: 50px;
+  height: 40px;
   padding-left: 5px;
   span {
     color: #11262D;
-    font-size: 20px;
+    font-size: 16px;
   }
 `;
 
 export const DashboardContainerTitle = styled.h2`
   font-family: Mina;
-  font-size: 25px;
+  font-size: 20px;
   color: #000000;
   text-align: center;
   margin-bottom: 10px;
@@ -130,9 +130,9 @@ export const DashboardContainerTitle = styled.h2`
 
 export const Input = styled.input`
   font-family: "Mina";
-  font-size: 18px;
+  font-size: 15px;
   outline: none;
-  width: 70%;
+  width: 56%;
   border: 1px solid rgba(0, 0, 0, 0.05);
   mix-blend-mode: normal;
   padding: 4px 8px;
@@ -142,11 +142,11 @@ export const Input = styled.input`
 
 export const Button = styled.button<any>`
   font-family: Mina;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 25px;
   color: white;
-  width: 105px;
-  height: 40px;
+  width: 95px;
+  height: 36px;
   border: none;
   border-radius: 90px;
   background-color: ${props => (props.type == "Save" ? '#2BB66C' : '#b63b2b')};
