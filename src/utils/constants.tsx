@@ -1,28 +1,16 @@
-import { SidebarItem } from "./types";
+import { Route } from "./types";
 
-export const sidebarItems = (guildId: string): SidebarItem[] => [
+export const sidebarItems = (guildId: string): Route[] => [
   {
     name: "General",
-    path:
-    {
-      name: "Geneal",
-      path: `/dashboard/${guildId}/general`
-    }
+    path: `/dashboard/${guildId}/general`
   },
   {
     name: "Security",
-    path:
-    {
-      name: "Security",
-      path: `/dashboard/${guildId}/security`
-    }
+    path: `/dashboard/${guildId}/security`
   },
   {
     name: "Miscellaneous",
-    path:
-    {
-      name: "miscellaneous",
-      path: `/dashboard/${guildId}/miscellaneous`
-    }
+    path: `/dashboard/${guildId}/miscellaneous`
   }
 ];
