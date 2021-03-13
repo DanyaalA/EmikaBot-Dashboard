@@ -6,7 +6,7 @@ export const SidebarStyle = styled.aside`
   background-color: #071013;
   font-family: Mina;
   position: fixed;
-  overflow: scroll;
+  overflow-x: scroll;
   ::-webkit-scrollbar {
     display: none;
   }
@@ -29,22 +29,43 @@ export const SidebarHeader = styled(BaseHeader)`
     padding-left: 10px;
     padding-top: 5px;
     font-size: 24px;
-  }
+    cursor: pointer;
+  };
 `;
 
 export const SidebarContent = styled.div`
   box-sizing: border-box;
-  margin-top: 100px;
+  margin-top: 0px;
+  padding: 0px 0px;
 `;
 
-export const SidebarItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  aligh-items: center;
-  position: absolute;
-  width: 240px;
+export const SidebarItem = styled.div<any>`
+  font-size: 22px;
+  padding: 0px 0px 0px 0px;
   height: 65px;
-  background-color: #AAAAAA;
+  width: 100%;
+  cursor: pointer;
+  span {
+      padding-left: 25px;
+      color: #F5EFEF;
+      text-align: center;
+      vertical-align: middle;
+  };
+  img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-top: 5px
+  }
+  ${(props) =>
+    props.isSelected
+      ? css`
+        background-color: #AAAAAA;
+      `
+      : css`
+        color: #F5EFEF;
+    `}
 `;
 
 export const IconStyle = styled.div`
@@ -54,4 +75,5 @@ export const IconStyle = styled.div`
     font-family: "Mina";
     border-radius: 50px;
     justify-content: center;
+    cursor: pointer;
 `;
